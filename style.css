@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+} */
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.new-game {
+    /* display: none; */
+
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.name1 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.name2 {
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.game-container {
+    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 900px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.content-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.score {
+    height: 50px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.player1-score, .player2-score {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.player1-score {
+    margin-left: 250px;
+}
+
+.player2-score {
+    margin-right: 250px;
+}
+
+.dice-roll-container {
+    height: 480px;
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.play-again {
+    display: none;
+}
+
+.player-name-section {
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.roll, .hold, .play-again, .new-game {
+    background-color: white;
+    font-size: 1.5rem;
+    padding: .5rem 1.25rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+}
+
+.roll, .play-again {
+    margin-top: 3rem;
+}
+
+.current-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.current1, .current2 {
+    border: 3px solid black;
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.player1-hold-text, .player2-hold-text {
+    margin-top: 2rem;
+}
+
+.player1-hold, .player2-hold {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.current1 {
+    background-color: #00FFFF;
+}
+
+.current2 {
+    background-color: #FFC0CB;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-dice {
+    opacity: 0;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 15px;
+    height: 226px;
+    width: 226px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.dot {
+    background-color: black;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    place-self: center;
+}
+
+.topLeft {
+    display: none;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.topCenter {
+    display: none;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.topRight {
+    display: none;
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.middleLeft {
+    display: none;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.middleCenter {
+    display: none;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.middleRight {
+    display: none;
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.bottomLeft {
+    display: none;
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.bottomCenter {
+    display: none;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.bottomRight {
+    display: none;
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
